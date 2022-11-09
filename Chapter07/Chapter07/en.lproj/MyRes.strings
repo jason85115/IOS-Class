@@ -1,0 +1,10 @@
+/* 
+  MyRes.strings
+  Chapter07
+
+  Created by UCOM-02 on 2022/11/9.
+  
+*/
+
+ALERT_TITLE_WELCOMEW = "Welcome";
+ALERT_BTN_OK = "OK";
