@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wlB-yZ-nd2">
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chapter02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uxa-Kq-D98">
+                                <rect key="frame" x="374.66666666666669" y="164" width="95" height="62"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="40"/>
+                                    <color key="baseForegroundColor" systemColor="systemGray6Color"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMx-qR-K1x">
+                                <rect key="frame" x="64" y="312" width="716" height="47"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EMx-qR-K1x" secondAttribute="bottom" constant="10" id="CVp-mX-0oZ"/>
+                            <constraint firstItem="Uxa-Kq-D98" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Faw-Hf-4DJ"/>
+                            <constraint firstItem="EMx-qR-K1x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="frP-xA-r9I"/>
+                            <constraint firstItem="Uxa-Kq-D98" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mXc-lQ-1Zh"/>
+                            <constraint firstItem="EMx-qR-K1x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oV4-dc-O4v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EMx-qR-K1x" secondAttribute="trailing" constant="20" id="rK9-Vz-ROk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="-16"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tS1-rt-Q36">
+            <objects>
+                <viewController id="wlB-yZ-nd2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lo7-7t-c8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ManyCloud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjb-S5-YaT">
+                                <rect key="frame" x="494.00000000000006" y="168.66666666666666" width="139.66666666666669" height="53"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="88"/>
+                                    <color key="textColor" systemColor="systemRedColor"/>
+                                </variation>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Dsq-uo-dPO">
+                                <rect key="frame" x="94" y="96.666666666666671" width="300" height="196.66666666666663"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="laU-5b-Vm1"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dsq-uo-dPO" firstAttribute="centerX" secondItem="Lo7-7t-c8Y" secondAttribute="centerX" id="3KN-CT-isl"/>
+                            <constraint firstItem="Dsq-uo-dPO" firstAttribute="centerY" secondItem="Lo7-7t-c8Y" secondAttribute="centerY" id="5M0-mK-l9c"/>
+                            <constraint firstItem="sjb-S5-YaT" firstAttribute="centerY" secondItem="Lo7-7t-c8Y" secondAttribute="centerY" id="KTx-lV-tis"/>
+                            <constraint firstItem="Dsq-uo-dPO" firstAttribute="top" secondItem="laU-5b-Vm1" secondAttribute="top" constant="50" id="LYD-jX-ZID"/>
+                            <constraint firstItem="sjb-S5-YaT" firstAttribute="leading" secondItem="Dsq-uo-dPO" secondAttribute="trailing" constant="100" id="Ls7-tk-dG7"/>
+                            <constraint firstItem="Dsq-uo-dPO" firstAttribute="leading" secondItem="laU-5b-Vm1" secondAttribute="leading" constant="50" id="jIh-Mi-ExL"/>
+                            <constraint firstItem="sjb-S5-YaT" firstAttribute="centerX" secondItem="Lo7-7t-c8Y" secondAttribute="centerX" id="k0t-kz-6sE"/>
+                            <constraint firstItem="sjb-S5-YaT" firstAttribute="top" secondItem="Dsq-uo-dPO" secondAttribute="bottom" constant="50" id="k4y-e6-NaE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3KN-CT-isl"/>
+                                <exclude reference="5M0-mK-l9c"/>
+                                <exclude reference="LYD-jX-ZID"/>
+                                <exclude reference="jIh-Mi-ExL"/>
+                                <exclude reference="KTx-lV-tis"/>
+                                <exclude reference="Ls7-tk-dG7"/>
+                                <exclude reference="k0t-kz-6sE"/>
+                                <exclude reference="k4y-e6-NaE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="5M0-mK-l9c"/>
+                                <include reference="jIh-Mi-ExL"/>
+                                <include reference="KTx-lV-tis"/>
+                                <include reference="Ls7-tk-dG7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="3KN-CT-isl"/>
+                                <include reference="LYD-jX-ZID"/>
+                                <include reference="k0t-kz-6sE"/>
+                                <include reference="k4y-e6-NaE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KjQ-6K-Dbh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1156.9230769230769" y="-16.350710900473931"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud" width="300" height="196.66667175292969"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

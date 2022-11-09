@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chapter03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JgY-fx-V90">
+                                <rect key="frame" x="48" y="262" width="279" height="31"/>
+                                <connections>
+                                    <action selector="alphaChangeHandler:" destination="BYZ-38-t0r" eventType="valueChanged" id="gNL-qk-QBB"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jz1-b9-zqk">
+                                <rect key="frame" x="163" y="342" width="51" height="31"/>
+                                <connections>
+                                    <action selector="powerHandler:" destination="BYZ-38-t0r" eventType="valueChanged" id="Y00-Fm-ElO"/>
+                                </connections>
+                            </switch>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightBulb_off" translatesAutoresizingMaskIntoConstraints="NO" id="2X2-oL-MZu">
+                                <rect key="frame" x="67.5" y="50" width="240" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8Mw-pg-zjO"/>
+                                    <constraint firstAttribute="height" constant="162" id="B3d-VR-yFZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightBulb_on" translatesAutoresizingMaskIntoConstraints="NO" id="FqE-0c-ZbM" userLabel="lightBulb_on">
+                                <rect key="frame" x="67.5" y="50" width="240" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8e7-be-L3o"/>
+                                    <constraint firstAttribute="height" constant="162" id="A1Z-0U-2pn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JgY-fx-V90" firstAttribute="top" secondItem="2X2-oL-MZu" secondAttribute="bottom" constant="50" id="DQK-Zw-sbl"/>
+                            <constraint firstItem="jz1-b9-zqk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IBm-eI-uWG"/>
+                            <constraint firstItem="FqE-0c-ZbM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="JDf-6o-pvV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JgY-fx-V90" secondAttribute="trailing" constant="50" id="VqM-BQ-0nh"/>
+                            <constraint firstItem="JgY-fx-V90" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Yfc-cM-c6k"/>
+                            <constraint firstItem="2X2-oL-MZu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dae-mA-814"/>
+                            <constraint firstItem="JgY-fx-V90" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="efn-Ps-n1G"/>
+                            <constraint firstItem="jz1-b9-zqk" firstAttribute="top" secondItem="JgY-fx-V90" secondAttribute="bottom" constant="50" id="jai-zj-N5V"/>
+                            <constraint firstItem="FqE-0c-ZbM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pkS-e4-o5X"/>
+                            <constraint firstItem="2X2-oL-MZu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="sKf-uo-0MS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lightBulbOn" destination="FqE-0c-ZbM" id="oMX-BE-ADe"/>
+                        <outlet property="sliderLightness" destination="JgY-fx-V90" id="kv2-8F-3GQ"/>
+                        <outlet property="switchLight" destination="jz1-b9-zqk" id="zJ9-D2-tLu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="-107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lightBulb_off" width="456" height="608"/>
+        <image name="lightBulb_on" width="456" height="608"/>
+    </resources>
+</document>
