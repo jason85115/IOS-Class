@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chapter12_hybrid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1d4-LP-CvN">
+                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <items>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Co6-H0-2Wf"/>
+                                    <barButtonItem tag="1" title="Folder" id="7xn-lw-h9K">
+                                        <connections>
+                                            <action selector="handler:" destination="BYZ-38-t0r" id="Fzl-QG-0eJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4bv-k5-qVQ"/>
+                                    <barButtonItem tag="2" title="Game" id="3Xk-My-NGQ">
+                                        <connections>
+                                            <action selector="handler:" destination="BYZ-38-t0r" id="4fa-OV-JGY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="HCK-b9-Mhs"/>
+                                    <barButtonItem tag="3" title="Mail" id="oNq-fM-2PX">
+                                        <connections>
+                                            <action selector="handler:" destination="BYZ-38-t0r" id="CD0-1x-Kk8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="SY3-SH-cjc"/>
+                                    <barButtonItem tag="4" title="Phone" id="rIm-1O-hb2">
+                                        <connections>
+                                            <action selector="handler:" destination="BYZ-38-t0r" id="SLc-tw-no8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Wiz-45-kyY"/>
+                                </items>
+                            </toolbar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gR-V1-G2v">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1gR-V1-G2v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="I8Y-Vy-vSn"/>
+                            <constraint firstItem="1d4-LP-CvN" firstAttribute="top" secondItem="1gR-V1-G2v" secondAttribute="bottom" id="ICw-NA-09u"/>
+                            <constraint firstItem="1d4-LP-CvN" firstAttribute="leading" secondItem="1gR-V1-G2v" secondAttribute="leading" id="M58-TM-fCh"/>
+                            <constraint firstItem="1d4-LP-CvN" firstAttribute="trailing" secondItem="1gR-V1-G2v" secondAttribute="trailing" id="jmm-QY-Dci"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1d4-LP-CvN" secondAttribute="bottom" id="oJs-4j-9qz"/>
+                            <constraint firstItem="1gR-V1-G2v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uTB-tf-900"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1gR-V1-G2v" secondAttribute="trailing" id="vra-Gv-deH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="1gR-V1-G2v" id="hmu-JT-O7q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
